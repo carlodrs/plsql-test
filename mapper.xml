@@ -1,0 +1,7 @@
+<mapper namespace="sql1">
+    <select id="select1" parameterType="map" resultType="String">
+        SELECT * FROM USERS
+        WHERE 
+        name LIKE #{name} AND num = #{number}
+    </select>
+</mapper>
